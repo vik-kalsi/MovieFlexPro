@@ -9,58 +9,103 @@
 
 <body class="bg-gradient-to-r from-[#1A360A] to-black text-white">
     
-    <div class="flex justify-between pt-4 px-3 lg:px-12">
+    <div id="TopDiv" class="flex justify-between pt-4 px-3 lg:px-12">
         <h1 class="font-bold md:text-4xl">MovieFlexPro</h1>
-        <button class="font-bold border-2 rounded-xl py-1 px-2 md:text-4xl lg:px-4 lg:py-2 hover:scale-125 duration-150 hover:bg-[#1A360A]">Login</button>
+        <button id="LoginButton" class="font-bold border-2 rounded-xl py-1 px-2 md:text-4xl lg:px-4 lg:py-2 hover:scale-125 duration-150 hover:bg-[#1A360A]">Login</button>
     </div>
 
 
-    <div class=" absolute z-10 top-28 left-3 right-2 bg-[#1A360A] grid justify-center pt-12 pb-14 mx-28 px-6">
-        <form class="w-60 lg:w-max">
-            <h1 class="mb-8 font-bold text-2xl">Login to your account</h1>
+    <div id="LoginSection" class="hidden absolute left-2 md:left-44 lg:left-96 z-10 bg-[#1A360A] text-black font-bold py-6 grid justify-center">
+        <form>
+            <h1 class="text-white p-2 md:text-4xl">Login to your account</h1>
+            <br>
 
-            <label for="Email_Address" class="mr-3">Email Address:</label>
-            <input type="email" class="text-black font-bold p-1 ml-2 mb-4"><br>
+            <div class="border-2 p-3">
+                <div>
+                    <label class="text-white md:text-2xl" for="email">Email Address:</label>
+                    <input class="p-1 md:text-2xl" type="text" id="email" placeholder="Email Address">
+                </div>
 
-            <label for="Password" class="mr-11">Password:</label>
-            <input type="password" class="text-black font-bold p-1 ml-2"><br>
+                <br>
 
-            <div class="grid">
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold mb-8 hover:bg-[#1A360A]">Log in</button>
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold hover:bg-[#1A360A]">Register</button>
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold hover:bg-[#1A360A]">Exit</button>
+                <div>
+                    <label class="text-white md:text-2xl" for="password">Password:</label>
+                    <input class="p-1 md:text-2xl" type="password" id="password" placeholder="Password">
+                </div>
+
+                <br>
+
+                <div>
+                    <button class="text-white md:text-2xl">Login</button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="flex justify-between px-8">
+                <button id="RegisterBtn" type="button" class="text-white md:text-2xl">Register</button>
+                <button class="text-white md:text-2xl">Exit</button>
             </div>
         </form>
     </div>
 
 
-    <div class="hidden absolute grid justify-center pt-12 pb-14 mx-28">
-        <form class="w-54 lg:w-max">
-            <h1 class="mb-8 font-bold text-2xl">Register new account</h1>
+    <div id="RegisterSection" class="hidden absolute left-2 md:left-44 lg:left-96 z-10 bg-[#1A360A] text-black font-bold py-6 grid justify-center">
+        <form>
 
-            <label for="Email_Address" class="mr-3">Email Address:</label>
-            <input type="email" class="text-black font-bold p-1 ml-20 mb-4"><br>
+            <h1 class="text-white p-2 md:text-4xl">Register new account</h1>
+            <br>
 
-            <label for="Password" class="mr-11">Password:</label>
-            <input type="password" class="text-black font-bold p-1 ml-20 mb-4"><br>
+            <div class="border-2 p-3">
+                <div>
+                    <label class="text-white md:text-2xl" for="email">Email Address:</label>
+                    <input class="p-1 md:text-2xl" type="text" id="email" placeholder="Email Address">
+                </div>
 
-            <label for="Password" class="mr-12">Confirm Password:</label>
-            <input type="password" class="text-black font-bold p-1 ml-3.5"><br>
+                <br>
 
-           <div class="grid">
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold mb-8 hover:bg-[#1A360A]">Register</button>
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold hover:bg-[#1A360A]">Login</button>
-                <button type="button" class="mt-6 border-2 py-2 px-4 font-bold hover:bg-[#1A360A]">Exit</button>
+                <div>
+                    <label class="text-white md:text-2xl" for="password">Password:</label>
+                    <input class="p-1 md:text-2xl" type="password" id="password" placeholder="Password">
+                </div>
+
+                <br>
+
+                <div>
+                    <label class="text-white md:text-2xl" for="password">Confirm Password:</label>
+                    <input class="p-1 md:text-2xl w-48 md:w-max" type="password" id="confirm_password" placeholder="Password">
+                </div>
+
+                <br>
+
+                <div>
+                    <label class="text-white md:text-2xl" for="DOB">Date of Birth:</label>
+                    <input class="p-1 md:text-2xl w-48 md:w-max" type="date" id="DOB">
+                </div>
+
+                <br>
+
+                <div>
+                    <button class="text-white md:text-2xl">Register</button>
+                </div>
             </div>
+
+            <br>
+
+            <div class="flex justify-between px-8">
+                <button id="LoginBtn" type="button" class="text-white md:text-2xl">Login</button>
+                <button class="text-white md:text-2xl">Exit</button>
+            </div>
+
         </form>
     </div>
 
 
-    <div class="grid justify-items-center mt-36">
+    <div id="Main_Title" class="grid justify-items-center mt-36">
         <h1 class="w-64 text-2xl md:text-4xl md:w-[410px] lg:mb-16 lg:font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
     </div>
 
-    <div class="grid justify-items-center mt-8 lg:grid lg:grid-cols-2 lg:space-y-8 lg:space-x-4">
+    <div id="Main_Images" class="grid justify-items-center mt-8 lg:grid lg:grid-cols-2 lg:space-y-8 lg:space-x-4">
         <div class="grid justify-items-center">
             <img class="rounded-3xl md:w-[400px]" src="images/cinema-popcorn-box-with-soft-drink.jpg" width="180px">
             <p class="text-sm md:text-lg">Image by <a href="https://www.freepik.com/free-photo/cinema-popcorn-box-with-soft-drink_4203714.htm#from_view=detail_alsolike">Freepik</a></p>
@@ -108,7 +153,7 @@
 
 
     <div class="mt-36 mb-16 grid justify-items-center text-xs md:text-2xl lg:mt-56">
-        <ul class="grid grid-cols-2 space-y-4 md:space-x-8 md:space-y-8 lg:grid-cols-3 lg:space-x-20">
+        <ul class="grid grid-cols-2 gap-2 md:gap-4 lg:grid-cols-3 lg:gap-x-60">
             <li><a href="#" class="hover:font-bold hover:underline underline-offset-4">About Us</a></li>
             <li><a href="#" class="hover:font-bold hover:underline underline-offset-4">Terms of Service</a></li>
             <li><a href="#" class="hover:font-bold hover:underline underline-offset-4">Social Media</a></li>
